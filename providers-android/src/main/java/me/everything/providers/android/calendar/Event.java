@@ -150,6 +150,9 @@ public class Event extends Entity {
     @FieldMapping(columnName = Events.ORIGINAL_SYNC_ID, physicalType = FieldMapping.PhysicalType.String)
     public String originalSyncId;
 
+    @FieldMapping(columnName = Events.DIRTY, physicalType = FieldMapping.PhysicalType.Int)
+    public int dirty;
+
     @FieldMapping(columnName = Events.RDATE, physicalType = FieldMapping.PhysicalType.String)
     public String rDate;
 
