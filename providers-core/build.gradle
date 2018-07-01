@@ -41,7 +41,17 @@ ext {
     allLicenses = ["Apache-2.0"]
 }
 
-apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.version = "1.0.1-SNAPSHOT"
+            pom.groupId = "easy-content-providers"
+            repository(url: "file://C:/Users/Elan-PC/.m2/repository")
+        }
+    }
+}
 
 buildscript {
     repositories {

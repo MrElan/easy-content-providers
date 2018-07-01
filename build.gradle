@@ -38,7 +38,7 @@ allprojects {
     uploadArchives {
         repositories {
             mavenDeployer {
-                pom.version = "1.0-SNAPSHOT"
+                pom.version = "1.0.1-SNAPSHOT"
                 pom.groupId = "me.everything"
                 repository(url: "file://C:/Users/Elan-PC/.m2/repository")
             }
